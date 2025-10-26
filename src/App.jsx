@@ -1,45 +1,39 @@
-import { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-const App = () => {
-  const [count, setCount] = useState(0);
-
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Vite + React</h1>
-        <p>
-          <button onClick={() => setCount(count => count + 1)}>
-            count is {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://react.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+    <div className="dashboard">
+      <aside className="sidebar">
+        <h2>ScopeAX</h2>
+        <nav>
+          <ul>
+            <li>Dashboard</li>
+            <li>Leads</li>
+            <li>Signals</li>
+            <li>Companies</li>
+            <li>Insights</li>
+          </ul>
+        </nav>
+      </aside>
+      <main className="content">
+        <header>
+          <h1>AI Lead Intelligence Dashboard</h1>
+          <p>Internal System – CMI Market Intelligence</p>
+        </header>
+        <section className="workspace">
+          <div className="card">
+            <h3>Lead Pipeline</h3>
+            <p>Data modules coming soon...</p>
+          </div>
+          <div className="card">
+            <h3>Market Signals</h3>
+            <p>Integrations in progress...</p>
+          </div>
+        </section>
+      </main>
     </div>
   );
-};
+}
 
 export default App;

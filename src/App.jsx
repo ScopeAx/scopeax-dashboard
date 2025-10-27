@@ -1,5 +1,5 @@
 import React from "react";
-import LeadHeatmap from "./LeadHeatmap";
+import LeadHeatmapChart from "./LeadHeatmapChart";
 import "./App.css";
 
 export default function App() {
@@ -24,7 +24,7 @@ export default function App() {
 
         <div className="workspace">
           <div className="card full-width">
-            <LeadHeatmap />
+            <LeadHeatmapChart />
           </div>
         </div>
       </main>

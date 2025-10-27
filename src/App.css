@@ -62,3 +62,14 @@ header p {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+.chart-card {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chart-card h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
